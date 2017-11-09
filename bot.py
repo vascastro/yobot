@@ -21,6 +21,8 @@ initial_extensions = [
     'cogs.tag',
 ]
 
+yobot = os.environ.get('BOTTOKEN')
+
 class Yobot(commands.Bot):
     def __init__(self):
         super().__init__(command_prefix=_prefix_callable, description=description,
